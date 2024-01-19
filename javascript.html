@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascrpt|assignment</title>
+</head>
+<body>
+    <hr>
+    <h2>Que-1 What is JavaScript?</h2><br>
+    <p>Ans- JavaScript is a high-level, dynamic, interpreted programming language that is primarily used to add interactivity and dynamic behavior to web pages.
+         It is commonly used for client-side development, allowing developers to create interactive elements, manipulate content, and respond to user actions within a web browser. 
+        JavaScript enables the creation of responsive and engaging web applications by enabling the modification of content, the handling of events, and the communication with servers for data exchange.    
+    </p>
+   <hr>
+   <hr>
+   <h2>Que-2 What is the use of isNaN function?</h2>
+   <p>Ans- What is the use of isNaN function?
+    The isNaN function is a built-in JavaScript function that is used to determine whether a value is NaN (Not-a-Number). 
+    It takes an argument and returns true if the argument is not a number, and false otherwise.
+
+    In JavaScript, the NaN value represents a value that is not a legal number.
+     It is a property of the global object and is returned when a mathematical operation results in an undefined or unrepresentable value. 
+    It is often the result of attempting to perform an operation that involves non-numeric values.
+    
+    </p>
+    <hr>
+    <hr>
+    <h2>Que-3 What is negative Infinity?</h2>
+    <p>Ans- In JavaScript, Infinity is a global property that represents positive infinity. It is a value that is greater than any other number. <br>
+        It is the result of a mathematical operation that exceeds the largest representable. <br>
+         On the other hand, there is also a corresponding value known as negative infinity, represented by the constant -Infinity. <br>
+        It is a value that is less than any other number. <br>  
+    </p>
+    <hr>
+    <hr>
+    <h2>Que-4 Which company developed JavaScript?</h2>
+    <p>Ans- JavaScript was developed by Netscape Communications Corporation, with the lead designer being Brendan Eich.
+         It was created in 1995 as a lightweight scripting language for the Netscape Navigator web browser.
+         Originally, it was named "Mocha," but it was later renamed "LiveScript" and finally "JavaScript" to capitalize on the popularity of Java at the time.
+        
+         JavaScript was created to enable client-side interactions and dynamic content on web pages. 
+         It quickly gained popularity due to its simplicity and ability to add interactivity to websites.
+          Over the years, it has evolved significantly and is now widely used not only for front-end web development but also for server-side development (Node.js), mobile application development, game development, and a variety of other applications. 
+         Today, JavaScript is one of the most widely used programming languages in the world.
+        </p>
+        <hr>
+        <hr>
+        <h2>Que-5  What are undeclared and undefined variables?</h2>
+        <p>
+            Ans-Undeclared variables: These are variables that have been used in code without being formally declared using the var, let, or const keywords.
+             When you attempt to use an undeclared variable, JavaScript will either create an implied global variable (in non-strict mode) or throw a reference error (in strict mode). 
+            Using undeclared variables is generally considered bad practice because it can lead to unexpected behavior and difficult-to-debug issues.
+
+            Undefined variables: These are variables that have been declared but have not been assigned a value.
+             In this case, the variable exists, but it does not yet hold any meaningful value.
+             Accessing an undefined variable typically results in the value undefined. 
+        </p>
+        <hr>
+        <hr>
+        <h2>Que-6 User Write the code for adding new elements dynamically?</h2>
+        <p>Ans-
+            In JavaScript, you can add new elements dynamically to the HTML document using the DOM (Document Object Model) manipulation methods.
+             Here's an example of how to create a new HTML element and add it to the document dynamically
+            Exm:-<!DOCTYPE html>
+            <html>
+            <head>
+            <title>Adding Elements Dynamically</title>
+            </head>
+            <body>
+            
+            <div id="myList">
+              <ul id="myUl">
+                <li>Item 1</li>
+                <li>Item 2</li>
+              </ul>
+            </div>
+            
+            <button onclick="addElement()">Add Element</button>
+            
+            <script>
+            function addElement() {
+              // Create a new list item
+              var newItem = document.createElement("li");
+              var textNode = document.createTextNode("New Item");
+              newItem.appendChild(textNode);
+            
+              // Add the new list item to the existing list
+              var list = document.getElementById("myUl");
+              list.appendChild(newItem);
+            }
+            </script>
+            
+            </body>
+            </html>
+            
+            </p>
+            <hr>
+            <hr>
+            <h2>Que-7 What is the difference between ViewState and SessionState?</h2>
+            <p>Ans- 1. ViewState:
+                        ViewState is used to preserve the state of a page and the values of controls on a page across postbacks. 
+                        It is used to store the state of the page and its controls in a hidden field on the page itself.
+                
+                   2.  SessionState:
+                      SessionState, on the other hand, is used to store and retrieve user-specific data on the server side.
+                      It is used to store user-specific data that can be accessed across all pages in a web application for a particular user session.
+                </p>
+                <hr>
+                <hr>
+                <h2>Que-8 What is === operator?</h2>
+                <p>Ans-The === operator is a strict equality operator in JavaScript.
+                     It checks whether the two operands are both equal in value and data type. 
+                     It returns true if the operands are strictly equal and of the same type, and false otherwise. 
+                     For example, 5 === 5 would return true because both the value and the type are the same, whereas 5 === '5' would return false because the types are different.
+                </p>
+                <hr>
+                <hr>
+                <h2>Que-9 How can the style/class of an element be changed?</h2>
+                <p>Ans-In JavaScript, you can change the style and class of an HTML element using various DOM manipulation methods. 
+                    Here are some common ways to do this:
+                
+                    1.Changing the style of an element:
+                           You can directly manipulate the style property of an element to change its CSS styles.
+                            
+                    Example:-
+                              
+                </p>
+                <hr>
+                <hr>
+                <h2>Que-10 How to read and write a file using JavaScript?</h2>
+                <p>Ans-file=fopen(getScriptPath(),0); The function fread() is used for reading the file content.
+                    str = fread(file,flength(file) ; The function fwrite() is used to write the contents to the file.
+                    file = fopen("c:\MyFile.txt", 3);// opens the file for writing.</p>
+                <hr>
+                <hr>
+                <h2>Que-11 What are all the looping structures in JavaScript?</h2>
+                <p>Ans-for/in - loops through the properties of an object
+                    for/of - loops through the values of an iterable object
+                    while - loops through a block of code while a specified condition is true
+                    do/while - also loops through a block of code while a specified condition is true</p>
+                <hr>
+                <hr>
+                <h2>Que-12  How can you convert the string of any base to an integer in JavaScript?</h2> 
+                <p>Ans-In JavaScript parseInt() function (or a method) is used to convert the passed-in string parameter or value to an integer value itself. 
+                    This function returns an integer of the base which is specified in the second argument of the parseInt() function.</p> 
+                    <hr>
+                    <hr>
+                    <h2>Que-13  How can you convert the string of any base to an integer in JavaScript?</h2> 
+                    <p>Ans-To convert a string of any base to an integer in JavaScript, you can use the parseInt function with the base as the second argument.
+                       Exm:- 
+                       // Convert a string of any base to an integer
+                       const inputString = "101010"; // Your input string here
+                       const base = 2; // Specify the base of the input string
+                       
+                       const result = parseInt(inputString, base);
+                       console.log(result); // This will output the integer value of the input string
+
+                    </p>
+                    <hr>
+                    <hr>
+                    <h2>Que-14 What is the function of the delete operator?</h2>
+                    <p>Ans-The delete operator in JavaScript is used to remove a property from an object.
+                         It can also be used to remove an item from an array. 
+                         exm:- const obj = { a: 1, b: 2, c: 3 };
+                         console.log(obj); // { a: 1, b: 2, c: 3 }
+                         
+                         delete obj.b;
+                         
+                         console.log(obj); // { a: 1, c: 3 }
+                           
+                        </p> 
+                        <hr>
+                        <hr>
+                        <h2>Que-15 What are all the types of Pop up boxes available in JavaScript?</h2>
+                        <p>Ans-JavaScript provides several types of pop-up boxes that can be used to interact with the user.
+                            1.Alert Box: The alert() method is used to display an alert box with a specified message and an OK button.
+
+                            2.Confirm Box: The confirm() method is used to display a dialog box with a specified message, along with OK and Cancel buttons.
+                             It returns a Boolean value indicating whether OK or Cancel was selected.
+
+                            3.Prompt Box: The prompt() method is used to display a dialog box that prompts the user to input text. 
+                            It takes two parameters: the prompt message and the default input value.
+                            It returns the text entered by the user. 
+                        </p>
+                        <hr>
+                        <hr>
+                        <h2>Que-16 What is the use of Void (0)?</h2>
+                        <p>Ans-In JavaScript, void(0) is often used to return undefined. The void operator is used before an expression to prevent the browser from taking any action with the expression that follows it.
+                             Using void(0) is a common way to create a quick expression that does nothing and does not return a meaningful value. 
+                             This can be useful in scenarios where you want to create a placeholder or a default action for an event, for instance, in HTML event handlers like <a> tags, where you might want to prevent the page from refreshing.
+                                Exm:- <a href="javascript:void(0);">Click here</a>
+
+                             </p>
+                             <hr>
+                             <hr>
+                             <h2>Que-17 How can a page be forced to load another page in JavaScript?</h2>
+                             <p>Ans-To force a page to load another page in JavaScript, you can use the window.
+                                location object.
+                                 This object provides the ability to navigate to a different URL.
+                                 You can set the window.location property to the desired URL, which will cause the browser to load the new page
+                                Exm:- window.location = "https://www.example.com";
+
+                                When this line of code is executed, the current page will be unloaded, and the browser will navigate to the specified URL. 
+                                This is a simple way to redirect the user to a different page in JavaScript.
+
+                                </p>
+                                <hr>
+                                <hr>
+                                <h2>Que-18 What are the disadvantages of using innerHTML in JavaScript?</h2>
+                                <p>Ans-
+                                    While the innerHTML property is a convenient way to manipulate the content of HTML elements in JavaScript, it has some disadvantages that developers should be aware of:
+                                    
+                                    1. Security risks: Using innerHTML can expose your application to security vulnerabilities such as cross-site scripting (XSS) attacks.
+                                     If the content being inserted via innerHTML includes user-generated or untrusted data, it could potentially execute malicious scripts embedded in that data.
+                                    
+                                    2. Performance implications: Manipulating innerHTML can be inefficient, especially when dealing with large amounts of HTML content. 
+                                    When you use innerHTML, the entire content of the element is serialized and parsed again, which can impact performance, especially on complex or large pages.
+                                    
+                                    3. Overwriting existing event handlers: When you use innerHTML to modify the content of an element, it can potentially overwrite any event listeners or data associated with the existing elements.
+                                     This can lead to unexpected behavior and bugs in your application.
+                                    
+                                    4. Loss of previously bound references: If you have JavaScript references to specific elements within the replaced content, those references may become invalid after using innerHTML to modify the content. 
+                                    This can result in unexpected behavior and errors in your code.</p>
+                                    <hr>
+                                    <hr>
+                                    <h2>Que-19 Create password field with show hide functionalities? </h2>
+                                    <p>Ans-<!DOCTYPE html>
+                                        <html>
+                                        <head>
+                                        <style>
+                                          .password-container {
+                                            position: relative;
+                                          }
+                                          .toggle-password {
+                                            position: absolute;
+                                            top: 50%;
+                                            right: 10px;
+                                            transform: translateY(-50%);
+                                            cursor: pointer;
+                                          }
+                                        </style>
+                                        </head>
+                                        <body>
+                                          <div class="password-container">
+                                            <input type="password" id="passwordField" placeholder="Enter password">
+                                            <span class="toggle-password" onclick="togglePasswordVisibility()">
+                                              Show
+                                            </span>
+                                          </div>
+                                        
+                                          <script>
+                                            function togglePasswordVisibility() {
+                                              var passwordField = document.getElementById("passwordField");
+                                              if (passwordField.type === "password") {
+                                                passwordField.type = "text";
+                                                document.querySelector(".toggle-password").textContent = "Hide";
+                                              } else {
+                                                passwordField.type = "password";
+                                                document.querySelector(".toggle-password").textContent = "Show";
+                                              }
+                                            }
+                                          </script>
+                                        </body>
+                                        </html>
+                                        </p>
+                                        <hr>
+                                        <hr>
+                                        <h2>Que-20 Create basic math operation in JS? </h2>
+                                        <p>Ans-<!DOCTYPE html>
+                                            <html>
+                                            <body>
+                                            
+                                            <h2>Basic Math Operations in JavaScript</h2>
+                                            
+                                            <p id="demo"></p>
+                                            
+                                            <script>
+                                            // Addition
+                                            var addition = 5 + 2;
+                                            document.getElementById("demo").innerHTML = "5 + 2 = " + addition + "<br>";
+                                            
+                                            // Subtraction
+                                            var subtraction = 5 - 2;
+                                            document.getElementById("demo").innerHTML += "5 - 2 = " + subtraction + "<br>";
+                                            
+                                            // Multiplication
+                                            var multiplication = 5 * 2;
+                                            document.getElementById("demo").innerHTML += "5 * 2 = " + multiplication + "<br>";
+                                            
+                                            // Division
+                                            var division = 5 / 2;
+                                            document.getElementById("demo").innerHTML += "5 / 2 = " + division + "<br>";
+                                            </script>
+                                            
+                                            </body>
+                                            </html>
+                                            </p>
+                                            <hr>
+                                            <hr>
+                                            <h2>Que-21 Create result ?</h2>
+                                            <p>Ans-<!DOCTYPE html>
+                                                <html>
+                                                <body>
+                                                
+                                                <h2>Basic Math Operations in JavaScript</h2>
+                                                
+                                                <p id="demo"></p>
+                                                
+                                                <script>
+                                                // Addition
+                                                var addition = 5 + 2;
+                                                document.getElementById("demo").innerHTML = "Addition: 5 + 2 = " + addition + "<br>";
+                                                
+                                                // Subtraction
+                                                var subtraction = 5 - 2;
+                                                document.getElementById("demo").innerHTML += "Subtraction: 5 - 2 = " + subtraction + "<br>";
+                                                
+                                                // Multiplication
+                                                var multiplication = 5 * 2;
+                                                document.getElementById("demo").innerHTML += "Multiplication: 5 * 2 = " + multiplication + "<br>";
+                                                
+                                                // Division
+                                                var division = 5 / 2;
+                                                document.getElementById("demo").innerHTML += "Division: 5 / 2 = " + division + "<br>";
+                                                </script>
+                                                
+                                                </body>
+                                                </html>
+                                                </p>
+                                                <hr>
+                                                <hr>
+                                                <h2>Que-22 Create a slider using JavaScript?</h2>
+                                                <p>Ans-<!DOCTYPE html>
+                                                    <html>
+                                                    <head>
+                                                    <style>
+                                                    .slider {
+                                                      -webkit-appearance: none;
+                                                      width: 100%;
+                                                      height: 15px;
+                                                      border-radius: 5px;
+                                                      background: #d3d3d3;
+                                                      outline: none;
+                                                      opacity: 0.7;
+                                                      -webkit-transition: .2s;
+                                                      transition: opacity .2s;
+                                                    }
+                                                    
+                                                    .slider::-webkit-slider-thumb {
+                                                      -webkit-appearance: none;
+                                                      appearance: none;
+                                                      width: 25px;
+                                                      height: 25px;
+                                                      border-radius: 50%;
+                                                      background: #4CAF50;
+                                                      cursor: pointer;
+                                                    }
+                                                    
+                                                    .slider::-moz-range-thumb {
+                                                      width: 25px;
+                                                      height: 25px;
+                                                      border-radius: 50%;
+                                                      background: #4CAF50;
+                                                      cursor: pointer;
+                                                    }
+                                                    </style>
+                                                    </head>
+                                                    <body>
+                                                    
+                                                    <h2>Slider Example</h2>
+                                                    
+                                                    <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                                                    
+                                                    <p>Value: <span id="demo"></span></p>
+                                                    
+                                                    <script>
+                                                    var slider = document.getElementById("myRange");
+                                                    var output = document.getElementById("demo");
+                                                    output.innerHTML = slider.value; // Display the default slider value
+                                                    
+                                                    // Update the current slider value (each time you drag the slider handle)
+                                                    slider.oninput = function() {
+                                                      output.innerHTML = this.value;
+                                                    }
+                                                    </script>
+                                                    
+                                                    </body>
+                                                    </html>
+                                                    <!DOCTYPE html>
+<html>
+<head>
+<style>
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Slider Example</h2>
+
+<input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+
+<p>Value: <span id="demo"></span></p>
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+</body>
+</html>
+</p>
+<hr>     
+</body>
+</html>
